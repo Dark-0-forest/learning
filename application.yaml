@@ -1,15 +1,19 @@
 spring:
   profiles:
-    active: dev
+    active:
+      - dev
 
 ---
 spring:
   profiles: dev
   application:
-    name: springcloud-config-dev
+    name: spring-cloud-config-dev
 
 ---
 spring:
   profiles: test
   application:
-    name: springcloud-config-test
+    name: spring-cloud-config-test
+
+server:
+  port: 8006
